@@ -27,6 +27,8 @@ export const Navigator = StackNavigator({
     // The third index will be another navigation stack itself, this stack will contain all the components
     // which will have access to the drawer, or in other words the screen can be swiped from the left on these
     // screens to access the drawer.
+    // The navigation stack which contains components with drawer can be named anything else, you can rename this from Home to ViewsWithDrawer
+    // but after login is complete instead of navigating with the string 'Home' you can use the string 'ViewsWithDrawer' if you rename it.
     Home: {screen: Drawer},
 }, {
     headerMode: 'none'
